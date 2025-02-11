@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 70vh;
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.40;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+nav img {
+    color: red;
+    width: 158px;
+    position: relative;
+    z-index: 10;
+    padding-top: 40px;
+    padding-right: 80px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", serif;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    line-height: 70px;
+    gap: 12px;
+    padding: 0px 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 8px;
+    /* Adjust thickness */
+    background-color: rgb(197, 17, 17);
+    border-radius: 50%;
+    /* Darker shade */
+    width: 100vw;
+    /* Ensure full width */
+}
+
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400px;
+    background-color: rgb(117 109 109 / 42%);
+    color: white;
+    border: 1px solid rgba(120, 120, 120, 0);
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-size: 21px;
+
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 20px 60px 16px 9px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgba(20, 20, 20, 20);
+    color: white;
+    font-weight: 500;
+    border: 1px solid rgb(120, 120, 120)
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    color: white;
+}
+
+.trend{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    padding: 70px 62px 0px 0px;
+}
+
+.card-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    white-space: nowrap;
+    padding: 40px 0px;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: auto;
+    scroll-snap-type: x mandatory;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+/* Hide default scrollbar */
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    min-width: 180px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+     transition: transform 0.3s ease-in-out,
+     box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Number Styling */
+.rank {
+    position: absolute;
+    left: 10px;
+    top: 89%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    /* Works in WebKit browsers (Chrome, Safari) */
+    text-shadow: 2px 2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white,
+        -2px -2px 0 white;
+}
+
+.join{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    padding: 70px 62px 0px 0px;
+}
+
+/* Center the section title properly */
+.section-title {
+    /* display: flex;
+    justify-content: center; */
+    /* Centers the text */
+    /* align-items: center; */
+    padding: 50px 0px 0px 150px;
+    margin-bottom: 0;
+    /* Remove negative margin */
+}
+
+/* Make heading color and font-size better */
+.section-title h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Center the card container */
+.option-cont {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    padding: 40px 0;
+    /* Adjust padding */
+    max-width: 80vw;
+    margin: auto;
+}
+
+/* Hide scrollbar */
+.option-cont::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card (optbox) Styling */
+.optbox {
+    background: linear-gradient(180deg, #48484843, #780046d3);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    min-height: 280px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.optbox:hover {
+    transform: scale(1.05);
+}
+
+/* Card Title */
+.optbox h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.optbox p {
+    font-size: 16px;
+    opacity: 0.8;
+    color: rgb(196, 196, 196);
+    margin-bottom: 120px;
+    /* Reduce margin-bottom */
+}
+.optbox svg {
+    align-self: flex-end;
+    /* Moves SVG to the right */
+}
+
+.faq h2{
+    text-align: center;
+    padding: 30px;
+    font-size: 48px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faqbox span{
+    padding: 23px 0px 15px 0px;
+    font-size: 25px;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 36, 36);
+    padding: 20px;
+    max-width: 75vw;
+    margin: 12px auto;
+    
+}
+.faqbox:hover {
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+   
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+    
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+footer .questions{
+    padding: 26px 0px;
+    margin: 20px 0px;;
+    
+}
+
+.endbtn{
+    padding: 12px 40px 12px 40px;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgba(91, 91, 91, 0.697);
+    color: white;
+    border: 1px solid rgba(120, 120, 120, 0);
+    cursor: pointer;
+    margin: 70px 200px;
+}
+
+.endweb{
+    padding: 0px 40px 12px 40px;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    margin: 20px 148px;
+}
